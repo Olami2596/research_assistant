@@ -2,6 +2,8 @@
 
 An intelligent web-based application that helps you analyze and extract insights from multiple web sources. Built with Streamlit, LangChain, and Groq LLM integration, this tool allows you to research, summarize, and query website content all in one place.
 
+Try it out: [here](https://olami-research-assistant.streamlit.app/)
+
 
 ---
 
