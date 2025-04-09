@@ -332,6 +332,11 @@ with st.sidebar:
 file_path = "faiss_store.pkl"
 main_placeholder = st.empty()
 
+# Try to get API key from environment or secrets
+groq_api_key = os.environ.get("GROQ_API_KEY")
+if not groq_api_key and hasattr(st, "secrets"):
+    groq_api_key = st.secrets.get("GROQ_API_KEY")
+
 # Configure LLM
 try:
     llm = ChatGroq(
